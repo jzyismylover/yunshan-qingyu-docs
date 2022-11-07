@@ -1,0 +1,23 @@
+{
+  "name": "yunshan-qingyu-docs",
+  "version": "1.0.0",
+  "description": "yunshan-qingyun project docs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "deploy": "yarn build && scp -r docs/.vitepress/dist/* root@120.77.245.193:/var/www/html/yunshan-qingyu-docs"
+  },
+  "keywords": [
+    "docs"
+  ],
+  "author": "jzy",
+  "license": "ISC",
+  "dependencies": {
+    "rimraf": "^3.0.2",
+    "vitepress": "^0.22.4"
+  },
+  "devDependencies": {
+    "@algolia/client-search": "^4.14.2"
+  }
+}
